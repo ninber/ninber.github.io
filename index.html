@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NiNBeR | Software Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { font-family: 'Segoe UI', system-ui, sans-serif; }
+    .hero-bg { background: linear-gradient(135deg, #1e3a8a, #3b82f6); }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+
+  <!-- Navbar -->
+  <nav class="bg-zinc-900 border-b border-zinc-800 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <i class="fas fa-code text-3xl text-blue-500"></i>
+        <span class="text-2xl font-bold tracking-tight">NiNBeR</span>
+      </div>
+      <div class="flex gap-8 text-sm font-medium">
+        <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+        <a href="about.html" class="hover:text-blue-400 transition">About Me</a>
+        <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+      </div>
+      <a href="https://github.com/NiNBeR" target="_blank"
+         class="flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-full text-sm transition">
+        <i class="fab fa-github"></i>
+        <span>GitHub</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero-bg py-24 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="text-6xl font-bold mb-4">Hi, I'm NiNBeR</h1>
+      <p class="text-2xl text-blue-200 mb-8">Building reliable software for the real world</p>
+      <div class="flex flex-wrap gap-4 justify-center text-sm uppercase tracking-widest">
+        <span class="bg-white/10 px-5 py-2 rounded-full">C / C++</span>
+        <span class="bg-white/10 px-5 py-2 rounded-full">Objective-C</span>
+        <span class="bg-white/10 px-5 py-2 rounded-full">Delphi / Pascal</span>
+        <span class="bg-white/10 px-5 py-2 rounded-full">Swift</span>
+        <span class="bg-white/10 px-5 py-2 rounded-full">Python</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Teaser -->
+  <section class="py-16 bg-zinc-900">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-4xl font-semibold mb-6">About Me</h2>
+        <p class="text-zinc-400 text-lg leading-relaxed">
+          Passionate developer with deep experience in low-level systems, mobile/desktop apps, 
+          and emerging AI technologies. I create POS solutions, SCADA systems, and research 
+          tools that solve real problems.
+        </p>
+        <a href="about.html" 
+           class="mt-8 inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-500 px-8 py-4 rounded-2xl font-medium transition">
+          View my visit card <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="bg-zinc-800 p-8 rounded-3xl border border-zinc-700">
+        <div class="flex items-center gap-6">
+          <img src="https://avatars.githubusercontent.com/u/12345678" 
+               alt="NiNBeR avatar" class="w-24 h-24 rounded-2xl object-cover border-4 border-blue-500">
+          <!-- Replace the URL above with your real GitHub avatar once you know your user ID, or upload your own photo -->
+          <div>
+            <div class="text-2xl font-bold">NiNBeR</div>
+            <div class="text-blue-400">Software Engineer • AI Researcher</div>
+            <div class="mt-4 flex gap-6 text-sm">
+              <div><i class="fas fa-map-marker-alt"></i> Ukraine</div>
+              <div><i class="fas fa-briefcase"></i> Open to collaboration</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 bg-zinc-950">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-semibold text-center mb-12">Featured Projects</h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Pension Simulator -->
+        <a href="https://ninber.github.io/pension" target="_blank"
+           class="group bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 hover:border-blue-500 transition">
+          <div class="h-48 bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center">
+            <i class="fas fa-chart-line text-7xl text-white/80 group-hover:scale-110 transition"></i>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold mb-2">Pension Simulator</h3>
+            <p class="text-zinc-400 mb-6">Geopolitical pension calculator with Monte-Carlo simulations and real-world data models.</p>
+            <div class="text-blue-400 text-sm font-medium flex items-center gap-2">
+              Live demo <i class="fas fa-external-link-alt"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- AntiRegEx -->
+        <a href="https://ninber.github.io/AntiRegEx" target="_blank"
+           class="group bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 hover:border-blue-500 transition">
+          <div class="h-48 bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center">
+            <i class="fas fa-shield-alt text-7xl text-white/80 group-hover:scale-110 transition"></i>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold mb-2">AntiRegEx</h3>
+            <p class="text-zinc-400 mb-6">Human-readable name generator that defeats simple regex scraping – perfect for anti-bot protection.</p>
+            <div class="text-blue-400 text-sm font-medium flex items-center gap-2">
+              Live demo <i class="fas fa-external-link-alt"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Placeholder for future projects -->
+        <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-dashed border-zinc-700 hover:border-blue-500 transition flex flex-col">
+          <div class="h-48 bg-zinc-800 flex items-center justify-center">
+            <i class="fas fa-plus text-5xl text-zinc-600"></i>
+          </div>
+          <div class="p-8 flex-1 flex flex-col">
+            <h3 class="text-2xl font-semibold mb-2 text-zinc-400">Your next project</h3>
+            <p class="text-zinc-500 mb-auto">Add more repos here – they will appear automatically when you create new GitHub Pages sites.</p>
+            <div class="text-xs uppercase tracking-widest text-zinc-500 mt-6">COMING SOON</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- More projects row (you can expand this) -->
+      <div class="mt-12 text-center">
+        <a href="https://github.com/NiNBeR?tab=repositories" target="_blank"
+           class="inline-flex items-center gap-2 text-zinc-400 hover:text-white text-sm">
+          See all repositories on GitHub <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black py-12 border-t border-zinc-900">
+    <div class="max-w-6xl mx-auto px-6 text-center text-zinc-500 text-sm">
+      © 2026 NiNBeR • Built with passion and clean code
+    </div>
+  </footer>
+
+</body>
+</html>
